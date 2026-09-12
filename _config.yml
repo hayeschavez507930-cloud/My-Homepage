@@ -1,0 +1,30 @@
+title: John Smith's Homepage
+description: >-
+  Personal academic homepage of John Smith, a machine learning researcher.
+avatar: images/profile.png
+
+# Site settings
+url: https://hayeschavez507930-cloud.github.io
+repository: hayeschavez507930-cloud/My-Homepage
+
+# Build settings
+markdown: kramdown
+remote_theme: academicpages/academicpages
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: true
